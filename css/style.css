@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@300..700&family=Iceland&family=Major+Mono+Display&family=Megrim&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Turret+Road:wght@200;300;400;500;700;800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  color: white;
+  background: #1a1a1a;
+  font-family: comfortaa, arial;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul > li {
+  padding: 0;
+  margin: 0;
+}
+
+ul > div {
+  padding: 0;
+  margin: 0;
+}
+
+button,
+input,
+select {
+  outline: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: url("../img/star-abstract-digital-art-uhdpaper.com-4K-4.2040.jpg") center/cover;
+}
+
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2vw;
+  border-radius: 1vw;
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  gap: 2vw;
+  -webkit-backdrop-filter: blur(0.1vw);
+          backdrop-filter: blur(0.1vw);
+  -webkit-box-shadow: 0 0 1vw black inset;
+          box-shadow: 0 0 1vw black inset;
+}
+
+.form {
+  width: 25vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1vw 0;
+}
+
+.input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border: none;
+  border-bottom: 0.1vw solid rgb(50, 50, 50);
+  -webkit-box-shadow: 0 0 0.5vw black, 0 0 0.5vw 0.1vw transparent, 0vw 0 2vw -0.5vw black, 0vw 0 2vw -0.5vw black, 0 -1vw 1vw -1vw transparent inset;
+          box-shadow: 0 0 0.5vw black, 0 0 0.5vw 0.1vw transparent, 0vw 0 2vw -0.5vw black, 0vw 0 2vw -0.5vw black, 0 -1vw 1vw -1vw transparent inset;
+  padding: 0.4vw 0.55vw;
+  width: 20vw;
+  height: 1.8vw;
+  border-radius: 1vw;
+  font-size: 0.8vw;
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.input:hover,
+.input:focus {
+  -webkit-box-shadow: 0 0 2vw black, 0 0 1.2vw 0.1vw black, 4vw 0 2vw -0.5vw rgb(255, 0, 105), -4vw 0 2vw -0.5vw rgb(255, 0, 105), 0 -1vw 1vw -1vw rgb(255, 0, 105) inset;
+          box-shadow: 0 0 2vw black, 0 0 1.2vw 0.1vw black, 4vw 0 2vw -0.5vw rgb(255, 0, 105), -4vw 0 2vw -0.5vw rgb(255, 0, 105), 0 -1vw 1vw -1vw rgb(255, 0, 105) inset;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background: rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.08vw;
+  padding: 0.4vw 1vw;
+  text-shadow: 0 0 0.2vw white;
+  border-bottom: 0.1vw solid rgb(255, 0, 105);
+  border-radius: 0.2vw;
+}
+
+.date {
+  list-style: none;
+  border: none;
+  background: transparent;
+  border-bottom: 0.1vw solid rgb(255, 0, 105);
+  -webkit-box-shadow: 0 -1vw 1vw -0.8vw black inset;
+          box-shadow: 0 -1vw 1vw -0.8vw black inset;
+  color: rgb(255, 0, 105);
+  min-width: 5.5vw;
+  height: 1.5vw;
+  border-radius: 1vw;
+  font-size: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.date::-webkit-calendar-picker-indicator {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.time {
+  border: none;
+  background: transparent;
+  border-bottom: 0.1vw solid rgb(255, 0, 105);
+  -webkit-box-shadow: 0 -1vw 1vw -0.8vw black inset;
+          box-shadow: 0 -1vw 1vw -0.8vw black inset;
+  color: rgb(255, 0, 105);
+  min-width: 5.5vw;
+  height: 1.5vw;
+  border-radius: 1vw;
+  font-size: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Turret Road;
+  padding: 0.2vw 0vw;
+  letter-spacing: 0.1vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.time::-webkit-calendar-picker-indicator {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.select {
+  list-style: none;
+  border: none;
+  background: transparent;
+  border-bottom: 0.1vw solid rgb(255, 0, 105);
+  -webkit-box-shadow: 0 -1vw 1vw -0.8vw black inset;
+          box-shadow: 0 -1vw 1vw -0.8vw black inset;
+  color: rgb(255, 0, 105);
+  min-width: 5.5vw;
+  height: 1.5vw;
+  border-radius: 1vw;
+  font-size: 0.8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.2vw 0vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.select option {
+  background: black;
+}
+
+.submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: transparent;
+  text-transform: uppercase;
+  border: 0.1vw solid rgb(50, 50, 50);
+  -webkit-box-shadow: 0 0 0.5vw black, 0 0 0.5vw 0.1vw transparent, 0vw 0 2vw -0.5vw black, 0vw 0 2vw -0.5vw black, 0 -1vw 1vw -1vw transparent inset;
+          box-shadow: 0 0 0.5vw black, 0 0 0.5vw 0.1vw transparent, 0vw 0 2vw -0.5vw black, 0vw 0 2vw -0.5vw black, 0 -1vw 1vw -1vw transparent inset;
+  padding: 0.4vw 0.55vw;
+  width: 8vw;
+  height: 2vw;
+  border-radius: 0.2vw;
+  cursor: pointer;
+  text-shadow: 0.05vw 0 0 white;
+  font-size: 1.2vw;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: Iceland;
+  letter-spacing: 0.2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.submit:after {
+  content: "next";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: transparent;
+  text-shadow: 1.8vw 1.8vw 1.2vw white;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  letter-spacing: 5.2vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.submit:hover:after,
+.submit:focus:after {
+  letter-spacing: 0.28vw;
+  text-shadow: 0.08vw 0vw 0 white;
+}
+
+.submit:before {
+  content: "next";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: transparent;
+  text-shadow: 1.8vw -2vw 1.2vw white;
+  text-transform: uppercase;
+  font-size: 1.2vw;
+  letter-spacing: 5.2vw;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.submit:hover:before,
+.submit:focus:before {
+  letter-spacing: 0.28vw;
+  text-shadow: 0.08vw 0vw 0.08vw white;
+}
+
+.submit:hover,
+.submit:focus {
+  -webkit-box-shadow: 0 0 2vw black, 0 0 1.2vw 0.1vw black, 4vw 0 2vw -0.5vw rgb(255, 0, 105), -4vw 0 2vw -0.5vw rgb(255, 0, 105), 0 -1vw 1vw -1vw rgb(255, 0, 105) inset;
+          box-shadow: 0 0 2vw black, 0 0 1.2vw 0.1vw black, 4vw 0 2vw -0.5vw rgb(255, 0, 105), -4vw 0 2vw -0.5vw rgb(255, 0, 105), 0 -1vw 1vw -1vw rgb(255, 0, 105) inset;
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 1.25vw;
+  letter-spacing: 1.28vw;
+  padding: 0.4vw 1vw;
+  text-shadow: 0 0 2vw white;
+  border-bottom: 0.1vw solid rgb(255, 0, 105);
+}
+
+.task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  width: 25vw;
+  border: 0.08vw solid white;
+  overflow-y: scroll;
+  padding: 1vw 2vw 2vw 2vw;
+  -webkit-box-shadow: 0 0 1vw 1vw black inset;
+          box-shadow: 0 0 1vw 1vw black inset;
+  gap: 1vw 0;
+}
+
+.task-list::-webkit-scrollbar {
+  display: none;
+}
+
+.times {
+  width: 10vw;
+  height: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 0, 105);
+  padding: 1vw 2vw 0.8vw 2vw;
+  letter-spacing: 0.1vw;
+  font-size: 0.92vw;
+  font-family: Turret Road;
+  border-radius: 1vw 1vw 0 0;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(0.1vw);
+          backdrop-filter: blur(0.1vw);
+  -webkit-box-shadow: 0 0 1vw black inset;
+          box-shadow: 0 0 1vw black inset;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 15vw;
+  min-width: 5vw;
+  gap: 0.25vw;
+  margin: 1vw 0 0 0;
+}
+
+.item-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4vw;
+}
+
+.dateEl {
+  font-family: Major Mono Display;
+  font-size: 0.75vw;
+}
+
+.timeEl {
+  font-family: Turret Road;
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+}
+
+.priority {
+  font-family: Turret Road;
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+}
+
+.task {
+  font-size: 0.7vw;
+  letter-spacing: 0.1vw;
+  margin: 0.45vw 0 0 0;
+  -webkit-box-shadow: 0 0 0.5vw white, 0 0 1vw -0.5vw black inset;
+          box-shadow: 0 0 0.5vw white, 0 0 1vw -0.5vw black inset;
+  border-radius: 0.5vw;
+  padding: 0.588vw 1.2vw;
+}
+
+.txt {
+  color: rgb(255, 0, 105);
+  font-family: Raleway;
+  text-shadow: 0 0 0.5vw black, 0 0 0.1vw black;
+  text-transform: uppercase;
+  font-size: 0.72vw;
+}
+
+.btn {
+  margin: 1vw 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8vw;
+  height: 1.45vw;
+  color: white;
+  background: transparent;
+  border: 0.1vw solid rgb(255, 0, 200);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  letter-spacing: 0.1vw;
+  cursor: pointer;
+  font-size: 0.8vw;
+  font-family: Megrim;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.btn:hover {
+  text-shadow: 0 0 0.5vw black, 0 0 0.1vw black;
+  background: white;
+  -webkit-box-shadow: 0 0 1vw white;
+          box-shadow: 0 0 1vw white;
+  color: black;
+  border: 0.1vw solid transparent;
+  letter-spacing: 0.15vw;
+  text-shadow: 0 0 0.1vw black, 0 0 0.08vw black, 0 0 0.05vw black;
+  font-size: 0.8vw;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}

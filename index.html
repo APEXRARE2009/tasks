@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>tasks</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="times"></div>
+        <div class="content">
+            <form class="form" action="./form.php" method="post">
+                <input class="input" type="text" name="task" required>
+                <input class="date" type="date" name="task_date" required>
+                <input class="time" type="time" name="task_time" required>
+                <select class="select" name="priority" required>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+                <button class="submit" type="submit">next</button>
+            </form>
+            <ul class="task-list"></ul>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
